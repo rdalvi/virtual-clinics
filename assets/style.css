@@ -170,6 +170,28 @@ p { margin: 0 0 1em; }
   border-radius: 50%;
 }
 
+/* Condition deep-dives */
+.condition-details {
+  display: grid;
+  gap: 16px;
+  margin-top: 32px;
+}
+.condition-detail {
+  padding: 24px 28px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  border-left: 3px solid var(--accent);
+}
+.condition-detail h3 {
+  margin-bottom: 8px;
+}
+.condition-detail p {
+  color: var(--text-soft);
+  margin: 0;
+  line-height: 1.65;
+}
+
 /* Pillars */
 .pillars {
   display: grid;

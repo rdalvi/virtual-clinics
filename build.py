@@ -145,13 +145,37 @@ CLINICS = [
             "from preschool articulation to post-stroke aphasia recovery."
         ),
         "conditions": [
-            "Childhood articulation and phonological disorders",
-            "Stuttering and cluttering (children and adults)",
-            "Voice disorders, including muscle tension dysphonia",
-            "Post-stroke aphasia and apraxia",
-            "Cognitive-communication after TBI",
-            "Accent modification (elective)",
-            "Gender-affirming voice therapy",
+            "Childhood-onset stuttering (preschool through adolescent)",
+            "Adult stuttering and avoidance-reduction therapy",
+            "Cluttering",
+            "Childhood apraxia of speech (CAS)",
+            "Articulation disorders, including persistent /r/, /s/, and /l/ errors",
+            "Phonological process disorders",
+            "Muscle tension dysphonia and other functional voice disorders",
+            "Vocal nodules, polyps, and lesion-related voice changes (with ENT)",
+            "Chronic cough and paradoxical vocal fold movement",
+            "Post-stroke aphasia (Broca's, Wernicke's, anomic, conduction)",
+            "Acquired apraxia of speech",
+            "Cognitive-communication after TBI or concussion",
+            "Right-hemisphere communication disorder",
+            "Social and pragmatic communication support",
+            "Gender-affirming voice",
+            "Accent modification",
+            "Professional and performance voice coaching",
+        ],
+        "condition_details": [
+            ("Stuttering and fluency disorders",
+             "Stuttering is one of the most common reasons people reach out to us, and the right approach depends heavily on age and goals. For preschoolers we use the Lidcombe Program — a parent-delivered, evidence-based approach with strong long-term outcomes when started early. For school-age children, adolescents, and adults we draw on the Camperdown Program, stuttering modification (Van Riper), and avoidance-reduction therapy (ARTS). Adult work often emphasizes the affective and avoidance dimensions of stuttering as much as speech mechanics, because that is usually where real-world function lives. We also treat cluttering, which is frequently misidentified as stuttering and requires a distinct approach centered on rate and clarity."),
+            ("Voice disorders",
+             "We treat the full range of functional voice problems: muscle tension dysphonia, vocal fatigue, chronic hoarseness, vocal nodules and polyps (in coordination with your ENT or laryngologist), vocal cord paresis, chronic cough, and paradoxical vocal fold movement. Voice work translates well to telehealth — we can hear changes clearly over a good microphone and our clinicians use stroboscopy reports from your ENT alongside their own perceptual assessment. For singers and professional voice users, we coordinate with laryngologists and singing teachers as part of a team."),
+            ("Adult acquired neuro-recovery",
+             "After a stroke or brain injury, we work on aphasia, apraxia of speech, and cognitive-communication concerns. Depending on the profile, our therapists draw on Semantic Feature Analysis, Verb Network Strengthening Treatment (VNeST), script training, Constraint-Induced Aphasia Therapy adaptations, and sentence-level approaches like Treatment of Underlying Forms. For cognitive-communication after TBI or concussion, we focus on attention, executive function, and the social-pragmatic skills that often get hit hardest."),
+            ("Pediatric speech sound disorders",
+             "We distinguish carefully between articulation disorders (specific sound errors), phonological process disorders (pattern-based errors), and childhood apraxia of speech — because the treatment approach is different for each. For CAS, we use Dynamic Temporal and Tactile Cueing (DTTC) and similar motor-based approaches. For phonological disorders, cycles or minimal pairs. Persistent /r/ and /s/ errors in older children and teens are a particular focus, since these are often missed in school therapy."),
+            ("Social and pragmatic communication",
+             "We support social communication for autistic adults and adolescents using a neurodiversity-affirming framework — meaning the goal is communication that works for the client in their own world, not masking or compliance with neurotypical norms. We also help adults with ADHD-related executive-communication challenges, and provide structured pragmatic language work for school-age children when that is what fits the family's goals."),
+            ("Gender-affirming voice and elective work",
+             "Gender-affirming voice therapy targets pitch, resonance, intonation, articulation, and nonverbal communication — with an emphasis on vocal health and durability of changes. We coordinate with laryngologists when surgical options are being considered. We also offer accent modification and professional voice coaching for clients whose careers involve sustained voice use, presenting, or performing."),
         ],
         "approach_intro": (
             "We match each patient with an SLP whose specialty fits their needs. "
@@ -796,6 +820,23 @@ def render_clinic_page(clinic):
         for q, a in clinic["faq"]
     )
 
+    if clinic.get("condition_details"):
+        detail_html = "\n".join(
+            f'        <article class="condition-detail"><h3>{html.escape(t)}</h3><p>{html.escape(d)}</p></article>'
+            for t, d in clinic["condition_details"]
+        )
+        condition_details_section = f"""
+    <section class="section alt">
+      <div class="container narrow">
+        <h2>Conditions in depth</h2>
+        <div class="condition-details">
+{detail_html}
+        </div>
+      </div>
+    </section>"""
+    else:
+        condition_details_section = ""
+
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -841,7 +882,7 @@ def render_clinic_page(clinic):
         </ul>
       </div>
     </section>
-
+{condition_details_section}
     <section class="section">
       <div class="container">
         <h2>Our approach</h2>
