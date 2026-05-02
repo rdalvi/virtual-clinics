@@ -786,6 +786,91 @@ CLINICS = [
              "Typically 4–6 weeks from intake to written report."),
         ],
     },
+    {
+        "slug": "cannabis-use-disorder",
+        "name": "Cannabis Use Disorder Treatment",
+        "short": "Cannabis Use Disorder",
+        "tagline": "Combined behavioral therapy and medical management for problematic cannabis use.",
+        "accent": "#4a5d52",
+        "accent_soft": "#ebeeec",
+        "category": "Addiction Medicine & Behavioral Health",
+        "intro": (
+            "Roughly one in three people who use cannabis daily develop cannabis use "
+            "disorder, and rates have risen substantially with the spread of high-potency "
+            "concentrates and daily vape use. Our program combines evidence-based "
+            "behavioral therapies with thoughtful medical support — treating CUD with "
+            "the same seriousness as any other substance use disorder, without "
+            "moralizing about cannabis itself."
+        ),
+        "conditions": [
+            "Daily or near-daily cannabis use causing functional impact",
+            "High-potency concentrate (dab, wax, distillate) dependence",
+            "Cannabis vape and edible dependence",
+            "Cannabis withdrawal syndrome",
+            "Cannabinoid hyperemesis syndrome (CHS)",
+            "CUD with co-occurring anxiety or depression",
+            "CUD with co-occurring ADHD",
+            "Medical cannabis patients seeking to reduce or stop",
+            "Synthetic cannabinoid (HHC, THC-O, K2) cessation",
+            "Relapse after prior quit attempts",
+        ],
+        "condition_details": [
+            ("Cannabis use disorder",
+             "DSM-5 cannabis use disorder is diagnosed when cannabis use causes meaningful problems across at least two of eleven domains — tolerance, withdrawal, unsuccessful quit attempts, time spent obtaining or using, role failures, and continued use despite consequences. Severity ranges from mild (2–3 criteria) to severe (6 or more). The clinical reality has shifted significantly in the past decade: today's daily user is often consuming cannabis many times more potent than a decade ago, frequently via concentrates that produce both faster tolerance and harder withdrawal. We treat the full severity spectrum."),
+            ("Cannabis withdrawal syndrome",
+             "Cannabis withdrawal is real, well-characterized, and a major reason people relapse during quit attempts. The classic profile includes irritability and anger, anxiety, sleep disturbance with vivid dreams, decreased appetite, restlessness, and depressed mood. Symptoms typically begin within 24–48 hours of last use, peak around days 2–6, and resolve over 1–3 weeks — though sleep can take longer to normalize. Knowing what to expect changes outcomes; we provide structured education and targeted support for the hardest first two weeks."),
+            ("Cannabinoid hyperemesis syndrome",
+             "CHS is increasingly common with chronic high-potency use: cyclical episodes of severe nausea, vomiting, and abdominal pain that paradoxically improve with hot showers and resolve only with sustained cannabis cessation. Many patients see multiple ER providers before a correct diagnosis is made. We coordinate with GI when needed and provide the structured cessation support that is the only definitive treatment."),
+            ("High-potency concentrates and dabs",
+             "Concentrate use behaves differently than flower use clinically. Tolerance escalates faster, withdrawal tends to be sharper, and the gap between casual and dependent use is shorter. We tailor our approach for concentrate-dominant users — including realistic expectations about the first two weeks, more intensive sleep and anxiety support, and concrete planning for social situations where dabs are normalized."),
+            ("CUD with co-occurring anxiety, depression, or ADHD",
+             "Many people use cannabis to manage anxiety, sleep, or attention symptoms — and cessation can transiently worsen what was being self-medicated. Our prescribers can address these underlying conditions directly with appropriate medications, while our therapists help build non-cannabis coping skills. Often the most important clinical work is identifying and treating the condition that was being medicated, so reduction or cessation is genuinely sustainable."),
+            ("Medical cannabis patients reducing or stopping",
+             "We work with patients who started cannabis under a medical recommendation but have come to feel it is no longer helping, or has begun causing more problems than it solves. The conversation here is different — it is about renegotiating your relationship with cannabis rather than treating an unequivocal disorder. We support stepwise reduction, full cessation, or pivots to alternative treatments depending on your goals."),
+        ],
+        "approach_intro": (
+            "There is no FDA-approved medication specifically for CUD, but the evidence "
+            "base for behavioral treatment is strong, and several off-label medications "
+            "can meaningfully reduce withdrawal severity and craving. Our program combines:"
+        ),
+        "pillars": [
+            ("CBT and motivational enhancement",
+             "Weekly therapy combining cognitive-behavioral skills with motivational enhancement — the two approaches with the strongest CUD evidence base."),
+            ("Medical support for withdrawal",
+             "Off-label medication options (e.g., gabapentin, N-acetylcysteine, prazosin for sleep) carefully selected for your withdrawal profile, prescribed and monitored by an addiction medicine clinician."),
+            ("Contingency management",
+             "Structured incentive-based reinforcement for negative urine screens — the single most evidence-supported intervention for CUD when implementable."),
+        ],
+        "steps": [
+            ("Intake", "Comprehensive medical and behavioral assessment, including use pattern, severity, and co-occurring conditions."),
+            ("Quit-plan design (week 1)", "Choose taper or stop-date approach, set up withdrawal medications, and identify trigger situations."),
+            ("Active phase (weeks 2–8)", "Weekly therapy and biweekly prescriber check-ins, with particular intensity through the withdrawal window."),
+            ("Maintenance (weeks 9–16)", "Skill consolidation, relapse-prevention work, and gradual taper of any withdrawal medications."),
+        ],
+        "best_for": [
+            "Adults using cannabis daily or near-daily with functional impact",
+            "Concentrate or vape users wanting structured cessation support",
+            "Medical cannabis patients reconsidering long-term use",
+            "Patients who have tried to stop and run into severe withdrawal",
+        ],
+        "not_for": [
+            "Patients in acute psychosis or severe psychiatric crisis (we stabilize first or refer)",
+            "Patients seeking confirmation that their use is not problematic",
+            "Adolescents under 18 (we refer to specialized adolescent programs)",
+        ],
+        "faq": [
+            ("Is cannabis really addictive?",
+             "Yes. About 9% of cannabis users overall — and roughly one in three daily users — meet criteria for cannabis use disorder. Risk is higher for people who started young and for high-potency products. Cannabis being legal in many places does not change its addictive potential."),
+            ("Are there medications that help?",
+             "No FDA-approved medication exists for CUD, but several off-label options have supportive evidence: gabapentin and N-acetylcysteine for craving and use reduction, prazosin for cannabis-related nightmares, and standard treatment of any underlying anxiety, depression, or ADHD that was being self-medicated."),
+            ("How long does withdrawal last?",
+             "Most acute withdrawal symptoms peak around days 2–6 and resolve within 1–3 weeks. Sleep disturbance and mood changes can take longer. Heavy concentrate users typically have a sharper, slightly longer withdrawal course."),
+            ("Do I have to stop completely, or can I cut back?",
+             "Both are valid goals. The evidence base is strongest for cessation, but harm-reduction approaches — reducing frequency, switching from concentrates back to lower-potency products, or eliminating high-risk patterns — are also legitimate paths. We work with your goals."),
+            ("Will you tell my doctor or employer?",
+             "No. Your care is confidential to the extent the law allows. We are a separate clinical service and only share information with your other providers if you ask us to."),
+        ],
+    },
 ]
 
 
