@@ -10,7 +10,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).parent
 SITE_NAME = "Virtual Clinics"
-SITE_TAGLINE = "Concept sites for thirteen specialty virtual care programs."
+SITE_TAGLINE = "Concept sites for fifteen specialty virtual care programs."
 REPO_BASE = "/virtual-clinics"  # GitHub Pages base path for project repo
 
 CLINICS = [
@@ -869,6 +869,97 @@ CLINICS = [
              "Both are valid goals. The evidence base is strongest for cessation, but harm-reduction approaches — reducing frequency, switching from concentrates back to lower-potency products, or eliminating high-risk patterns — are also legitimate paths. We work with your goals."),
             ("Will you tell my doctor or employer?",
              "No. Your care is confidential to the extent the law allows. We are a separate clinical service and only share information with your other providers if you ask us to."),
+        ],
+    },
+    {
+        "slug": "kyphosis-lordosis",
+        "name": "Kyphosis & Lordosis Treatment",
+        "short": "Kyphosis & Lordosis",
+        "tagline": "Posture-focused physical therapy for excessive thoracic and lumbar spinal curvature.",
+        "accent": "#5b6cad",
+        "accent_soft": "#e9ecf6",
+        "category": "Physical Therapy",
+        "intro": (
+            "Kyphosis and lordosis are postural and structural curvature conditions that "
+            "respond well to targeted, progressive physical therapy when caught before "
+            "they become rigid or symptomatic. Our program pairs you with a PT trained "
+            "specifically in spinal posture rehabilitation — combining mobility work, "
+            "deep postural muscle training, and day-to-day movement retraining over "
+            "secure video."
+        ),
+        "conditions": [
+            "Postural (flexible) thoracic kyphosis in adolescents and adults",
+            "Scheuermann's kyphosis (non-surgical management)",
+            "Hyperkyphosis of aging and osteoporosis-related curvature",
+            "Post-surgical thoracic kyphosis rehabilitation",
+            "Excessive lumbar lordosis (hyperlordosis) and anterior pelvic tilt",
+            "Flat-back syndrome and lumbar hypolordosis",
+            "Pregnancy- and postpartum-related lordotic posture",
+            "Forward head posture and upper-crossed syndrome",
+            "Lower-crossed syndrome with lumbar hyperlordosis",
+            "Compensatory curvature from leg-length discrepancy",
+        ],
+        "condition_details": [
+            ("Postural kyphosis",
+             "Postural kyphosis is a flexible, correctable rounding of the upper back driven by muscle imbalance and habitual posture rather than vertebral wedging. It is by far the most common form we see — particularly in adolescents who spend long hours over screens, and in adults whose work involves sustained forward reach. Because the curvature is flexible, the prognosis with consistent therapy is excellent: most patients see meaningful change within 8–12 weeks. We focus on thoracic extension mobility, scapular and deep neck flexor strengthening, and rebuilding the postural endurance that allows the corrected position to feel effortless rather than held."),
+            ("Scheuermann's kyphosis",
+             "Scheuermann's is a structural kyphosis with anterior wedging of three or more consecutive vertebrae, typically presenting in adolescence. PT cannot reverse the wedging itself, but it remains the cornerstone of non-surgical care: maintaining mobility above and below the rigid segment, building the postural musculature that compensates for the curve, and reducing the secondary muscle pain that drives most symptoms. We coordinate with your spine specialist when bracing or surgical evaluation is appropriate."),
+            ("Hyperkyphosis of aging",
+             "After roughly age 50, kyphotic angle tends to increase — driven by a combination of disc degeneration, vertebral compression fractures, and postural muscle weakness. Hyperkyphosis is associated with falls, breathing difficulty, and reduced function. The good news: targeted exercise meaningfully reduces kyphotic angle and improves quality of life even in patients with osteoporosis. We use programs adapted from the published 'spinal proprioceptive extension exercise dynamic' (SPEED) and similar evidence-based protocols, modified for safety in osteoporotic patients."),
+            ("Excessive lumbar lordosis",
+             "Hyperlordosis — excessive inward curvature of the low back — typically goes hand-in-hand with anterior pelvic tilt, weak deep abdominals and glutes, and tight hip flexors and lumbar extensors. It often presents as low back pain with prolonged standing, difficulty engaging the core, and a visibly arched lower back. Treatment is rarely about 'flattening' the spine; it is about restoring the muscular balance that lets the pelvis sit neutrally. Our program targets hip flexor mobility, gluteal and deep abdominal activation, and posterior pelvic tilt control."),
+            ("Flat-back and lumbar hypolordosis",
+             "The opposite problem — too little lumbar curve — is increasingly common in patients with prolonged sitting, after certain spinal surgeries, or as part of a sagittal-plane imbalance. Flat-back posture reduces the spine's shock absorption and is strongly linked to fatigue, low back pain, and difficulty standing upright through the day. We work on segmental lumbar extension mobility, hip extension range, and the postural endurance needed to maintain a healthy lordotic curve."),
+            ("Forward head and upper-crossed syndrome",
+             "Forward head posture rarely exists in isolation; it travels with rounded shoulders, an elevated and protracted scapula, weak deep neck flexors, and tight upper trapezius and pectoralis muscles. This pattern — sometimes called upper-crossed syndrome — is a major driver of cervicogenic headaches, mid-thoracic pain, and shoulder impingement symptoms. Our program addresses the full chain rather than treating the neck in isolation."),
+            ("Lower-crossed syndrome",
+             "Lower-crossed syndrome pairs tight hip flexors and lumbar extensors with inhibited glutes and deep abdominals, producing the classic anterior pelvic tilt and lumbar hyperlordosis. It is one of the most common postural patterns we see and underlies a large share of mechanical low back pain. The treatment principles are well-established; what makes the difference is consistent, progressive programming and motor-control work that translates into how you actually stand, sit, and move."),
+        ],
+        "approach_intro": (
+            "Postural curvature is rarely fixed by stretching alone. Lasting change "
+            "requires mobility, strength, and motor control — applied consistently and "
+            "progressed over time. Our PTs build programs around three pillars:"
+        ),
+        "pillars": [
+            ("Targeted mobility",
+             "Restoring the specific segmental mobility that postural curves require — thoracic extension for kyphosis, hip extension for lordosis — without overstretching segments that are already hypermobile."),
+            ("Deep postural strengthening",
+             "Rebuilding the deep neck flexors, scapular stabilizers, deep abdominals, and gluteal muscles that hold corrected posture without conscious effort."),
+            ("Motor-control retraining",
+             "Translating exercise gains into how you actually stand, sit, walk, and lift — the part most home programs miss, and the reason results stick."),
+        ],
+        "steps": [
+            ("Initial evaluation", "60-minute video assessment including postural analysis, mobility testing, and functional movement screening."),
+            ("Personalized program", "A written progressive program with video demonstrations, organized by phase (mobility → strength → integration)."),
+            ("Weekly sessions", "30-minute follow-ups to progress your program, refine technique, and troubleshoot."),
+            ("Discharge and maintenance", "Most patients see meaningful improvement in 8–12 weeks and graduate to an independent maintenance routine."),
+        ],
+        "best_for": [
+            "Adolescents and adults with flexible postural kyphosis or lordosis",
+            "Older adults with hyperkyphosis seeking evidence-based exercise",
+            "Patients with chronic neck or back pain driven by postural patterns",
+            "Patients without local access to posture-specialized PT",
+            "Post-surgical patients past their early restrictions phase",
+        ],
+        "not_for": [
+            "Acute spinal trauma or suspected vertebral fracture",
+            "Adolescent idiopathic scoliosis as a primary diagnosis (we refer to Schroth-certified specialists)",
+            "Severe rigid curves likely needing surgical evaluation",
+            "Patients with red-flag neurological symptoms (progressive weakness, bowel or bladder changes)",
+        ],
+        "faq": [
+            ("Can posture really be changed once you're an adult?",
+             "Yes — flexible postural curves respond well to consistent therapy at any age. Even structural curves often improve in functional terms (pain, endurance, appearance) with the right program, even when the underlying skeletal anatomy doesn't change."),
+            ("How long until I see results?",
+             "Most patients notice changes in symptoms and ease of holding posture within 4–6 weeks. Visible postural change usually follows by 8–12 weeks. Long-standing patterns can take longer — six months is not unusual for full integration."),
+            ("Do I need any equipment?",
+             "Most programs use a yoga mat, a resistance band, and a foam roller. We sometimes recommend a small posture mirror or a phone tripod so you can self-check form. We tell you upfront before adding anything."),
+            ("Will I need a brace?",
+             "Most adults with flexible kyphosis or lordosis don't. Bracing is sometimes part of care for adolescent Scheuermann's kyphosis, and we coordinate with your spine specialist if it's appropriate. We do not prescribe braces ourselves."),
+            ("What about scoliosis?",
+             "Scoliosis (lateral curvature with rotation) is a different condition that benefits most from Schroth-certified care. We screen for it during evaluation and refer when it's the primary issue, while still helping with any kyphotic or lordotic component."),
+            ("Is this covered by insurance?",
+             "We are a cash-pay practice and provide superbills for out-of-network reimbursement. Many patients receive partial reimbursement under physical therapy benefits."),
         ],
     },
 ]
