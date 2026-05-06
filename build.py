@@ -10,7 +10,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).parent
 SITE_NAME = "Virtual Clinics"
-SITE_TAGLINE = "Concept sites for fifteen specialty virtual care programs."
+SITE_TAGLINE = "Concept sites for sixteen specialty virtual care programs."
 REPO_BASE = "/virtual-clinics"  # GitHub Pages base path for project repo
 
 CLINICS = [
@@ -960,6 +960,109 @@ CLINICS = [
              "Scoliosis (lateral curvature with rotation) is a different condition that benefits most from Schroth-certified care. We screen for it during evaluation and refer when it's the primary issue, while still helping with any kyphotic or lordotic component."),
             ("Is this covered by insurance?",
              "We are a cash-pay practice and provide superbills for out-of-network reimbursement. Many patients receive partial reimbursement under physical therapy benefits."),
+        ],
+    },
+    {
+        "slug": "migraine",
+        "name": "Virtual Migraine Clinic",
+        "short": "Migraine Clinic",
+        "tagline": "Headache-neurology-led care for episodic and chronic migraine.",
+        "accent": "#8b3a4e",
+        "accent_soft": "#f3e3e7",
+        "category": "Headache Neurology",
+        "intro": (
+            "Migraine is one of the most common and disabling neurological conditions, "
+            "and most people who live with it never see a headache specialist. The wait "
+            "for a headache neurologist commonly runs six months to a year, and primary "
+            "care has limited time to work through the full preventive and acute "
+            "pharmacologic ladder. Our program brings dedicated headache-neurology care "
+            "to your home — including the modern preventive arsenal (CGRP antibodies, "
+            "gepants), acute therapy optimization, behavioral therapy integration, and "
+            "structured medication-overuse withdrawal when needed."
+        ),
+        "conditions": [
+            "Episodic migraine, with and without aura",
+            "Chronic migraine (≥15 headache days per month)",
+            "Vestibular migraine and migrainous vertigo",
+            "Menstrual and hormonally-driven migraine",
+            "Hemiplegic migraine",
+            "Migraine with brainstem aura (basilar-type)",
+            "Status migrainosus (refractory acute attack management)",
+            "Medication overuse headache (MOH)",
+            "New daily persistent headache (NDPH)",
+            "Cluster headache and other trigeminal autonomic cephalalgias",
+            "Post-concussive headache with migrainous features",
+            "Migraine in pregnancy and lactation (coordinated with OB)",
+            "Adolescent migraine (age 12 and up)",
+            "Refractory migraine after multiple preventive failures",
+        ],
+        "condition_details": [
+            ("Episodic and chronic migraine",
+             "The single most consequential question in migraine care is whether you are episodic (fewer than 15 headache days per month) or chronic (15 or more, with at least 8 meeting full migraine criteria). The treatment ladders are different, the preventive evidence base is different, and the insurance coverage criteria are different. Many patients sit just on either side of the line and slide between categories — often without anyone formally tracking it. We start every program with a structured headache calendar so we know which patient we are actually treating, and we re-stage at every visit."),
+            ("Vestibular migraine",
+             "Vestibular migraine is one of the most common causes of recurrent vertigo in adults and one of the most under-diagnosed. Many patients spend years cycling through ENT, cardiology, and neurology workups before someone connects episodic vertigo, motion sensitivity, and a personal or family history of migraine. The treatment principles overlap with classic migraine — preventive medication, trigger work, vestibular rehab — but the acute toolkit is narrower and the response timelines are different. We treat vestibular migraine with the same neurologists who treat the rest of our migraine population, in coordination with vestibular PT when indicated."),
+            ("Menstrual and hormonal migraine",
+             "Menstrual migraine — attacks tightly clustered around the perimenstrual window — affects a large share of women with migraine and often responds poorly to the same preventive that works the rest of the month. Targeted strategies include scheduled mini-prevention with long-acting triptans or NSAIDs across the perimenstrual window, hormonal stabilization in coordination with gynecology, and CGRP antagonists timed to the cycle. Perimenopause adds a layer: migraine frequency commonly worsens for several years before stabilizing post-menopause, and managing that transition deliberately can change the trajectory."),
+            ("Medication overuse headache",
+             "Medication overuse headache is a paradox at the heart of migraine care: the acute medications that abort individual attacks can, when used too frequently, perpetuate the underlying headache disorder. The thresholds are well-established (roughly 10 days per month for triptans, opioids, ergots, or combination analgesics; 15 for simple analgesics). Recognizing and treating MOH is one of the most clinically rewarding things we do — many patients see their baseline headache pattern improve dramatically once the overused medication is withdrawn and a proper preventive is in place. The first two weeks of withdrawal are the hard part, and we plan for them deliberately with bridge therapies and structured check-ins."),
+            ("Cluster headache",
+             "Cluster headache is a distinct trigeminal autonomic cephalalgia with a different clinical profile, treatment toolkit, and natural history than migraine. Attacks are short (15–180 minutes), severe, strictly unilateral, and accompanied by autonomic features (tearing, conjunctival injection, ptosis, rhinorrhea). Effective acute therapy is high-flow oxygen and subcutaneous sumatriptan; preventive options include verapamil at neurology-specific dosing, galcanezumab, and short corticosteroid bridges during a cluster period. We treat cluster headache with the same neurologist team and coordinate oxygen prescriptions through your local DME provider."),
+            ("Refractory migraine after multiple preventive failures",
+             "A meaningful share of patients reach us after trying — and not tolerating or not responding to — three, four, or more preventive medications. Modern headache neurology has a structured way to think about this: confirming the diagnosis is correct (vestibular migraine, NDPH, and chronic tension-type can masquerade as refractory migraine), identifying any unaddressed contributors (sleep apnea, MOH, hormonal drivers, untreated mood symptoms), and then sequencing the newer mechanism classes (CGRP monoclonal antibodies, atogepant, Botox for chronic migraine) thoughtfully rather than adding them on top of a regimen that is already failing."),
+        ],
+        "approach_intro": (
+            "Migraine care has been transformed in the past decade by CGRP-targeted "
+            "therapies. The challenge is no longer a lack of options — it is matching "
+            "the right combination of acute, preventive, and behavioral care to each "
+            "patient, and adjusting it deliberately over time. Our headache neurologists "
+            "build programs around three pillars:"
+        ),
+        "pillars": [
+            ("Acute therapy optimization",
+             "Right-sized acute regimens using triptans, gepants (rimegepant, ubrogepant, zavegepant), ditans, anti-emetics, and rescue planning — with explicit attention to the use-frequency thresholds that protect against medication overuse headache."),
+            ("Preventive strategy",
+             "Modern preventive sequencing: CGRP monoclonal antibodies (erenumab, fremanezumab, galcanezumab, eptinezumab), atogepant, traditional preventives (topiramate, beta-blockers, tricyclics, candesartan), and Botox-for-chronic-migraine coordination when indicated."),
+            ("Lifestyle and behavioral integration",
+             "The SEEDS framework (sleep, exercise, eat, diary, stress) implemented as concrete habits, with referral to migraine-specific CBT, biofeedback, and neuromodulation devices (Cefaly, Nerivio, gammaCore) when they fit your pattern."),
+        ],
+        "steps": [
+            ("Comprehensive intake", "60-minute visit covering full headache history, prior treatment ladder, family history, and red-flag screening. We set up a structured digital headache calendar before you leave."),
+            ("Personalized treatment plan", "A written plan layering acute therapy, a preventive strategy, and behavioral integration — with explicit response criteria and timelines so you know what 'working' looks like."),
+            ("Active titration", "Monthly visits over 3–4 months while preventives reach steady state and acute regimens are refined. Most CGRP antibodies need 8–12 weeks for a fair trial; oral preventives need careful dose titration."),
+            ("Maintenance", "Quarterly visits once stable, with messaging access for breakthrough flares and a planned re-evaluation of preventive duration after 6–12 months of good control."),
+        ],
+        "best_for": [
+            "Adults with 4 or more migraine days per month",
+            "Patients with chronic migraine (≥15 headache days per month)",
+            "Patients who have failed two or more preventive medications",
+            "Patients without local headache-neurologist access",
+            "Patients with suspected medication overuse headache seeking structured withdrawal",
+            "Patients exploring CGRP-targeted therapies and needing prior-auth support",
+        ],
+        "not_for": [
+            "Thunderclap headache, worst-headache-of-life, or sudden focal neurological deficits — call 911 or go to the nearest ED",
+            "New headache patterns with red-flag features that need in-person workup before management",
+            "Children under 12 (we refer to pediatric headache specialists)",
+            "Patients seeking opioid or barbiturate-containing prescriptions for migraine — we do not prescribe these for headache",
+            "Acute pregnancy without an OB already co-managing care",
+        ],
+        "faq": [
+            ("Can migraine really be diagnosed and managed over telehealth?",
+             "Yes. Migraine diagnosis is fundamentally clinical — based on history against ICHD-3 criteria, not imaging or labs. Telehealth is well-suited to it. When a presentation has red flags or warrants imaging, a focused exam, or in-office procedures, we coordinate with a local clinic rather than skipping the workup."),
+            ("What about CGRP medications?",
+             "CGRP monoclonal antibodies and the gepants are now first-line preventive options for many patients, and we routinely prescribe them. We also help with prior authorizations and patient assistance programs, since coverage varies wildly by plan and the paperwork burden is real."),
+            ("Do you do Botox for chronic migraine?",
+             "We design and direct the regimen, but the injections themselves are an in-person procedure. We coordinate the PREEMPT protocol with a partner injector or your local neurologist."),
+            ("Will I be on preventives forever?",
+             "Often no. Many patients taper off preventives after 6–12 months of stable control. We plan the taper carefully because rebound is real and the goal is durable improvement, not a permanent prescription."),
+            ("What if I have medication overuse headache?",
+             "Withdrawal from overused acute medications is one of the most clinically rewarding things we do — and one of the hardest first two weeks. We provide a structured plan that includes a bridge therapy (often a short steroid course or DHE alternative), a clear acute-medication ceiling going forward, and frequent check-ins through the rough window."),
+            ("Can you handle cluster headache?",
+             "Yes. Cluster headache responds to a different toolkit (high-flow oxygen, subcutaneous sumatriptan, verapamil at headache-specific dosing, galcanezumab, short steroid bridges) and we manage it with the same neurologist team. We coordinate oxygen prescriptions through your local DME provider."),
+            ("What about devices like Cefaly or Nerivio?",
+             "Neuromodulation devices have a real role for the right patient — particularly those who want to minimize medications, are pregnant, or are layering acute support around a stable preventive. We discuss them case by case and help with prescriptions where required."),
+            ("Is this covered by insurance?",
+             "We are a cash-pay practice and provide superbills for out-of-network reimbursement. Prescribed medications run through your normal pharmacy benefit, and we handle prior authorizations as part of the visit."),
         ],
     },
 ]
